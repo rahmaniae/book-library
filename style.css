@@ -1,0 +1,83 @@
+:root {
+    font-size: 16px;
+    --large : 1.5rem;
+    --medium : 1.25rem;
+    --small : 0.75rem
+}
+
+body {
+    padding: 18px 36px;
+    background-color: rgb(226, 226, 226);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+ 
+}
+
+.card{
+    background-color: white;
+    padding: 20px 15px 20px 15px;
+    border-radius: 16px;
+}
+
+.card > div {
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: var(--large);
+    font-weight: 700;
+}
+
+.author {
+    font-size: var(--medium);
+    font-style: italic;
+}
+
+.status {
+    font-size: 1rem;
+    color: gray;
+}
+
+dialog {
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 16px;
+}
+
+dialog .dialog-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 18px;
+    margin: 4px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#addBookBtn {
+    margin-top: 18px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(54, 168, 54);
+    color: white;
+    font-size: var(--medium);
+    font-weight: 700;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    margin-top: 6px;
+}
